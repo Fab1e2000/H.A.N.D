@@ -5,14 +5,14 @@
 //n015 2025.6.2
 
 2025.6.27更新
-今日学习并使用DH参数法通过matlab robotics toolbox工具进行了人类食指的数学建模。
+今日学习并使用DH参数法通过MATLAB robotics toolbox工具进行了人类食指的数学建模。
 
 2025.6.29更新
-今日使用蒙特卡洛法对食指指尖的工作空间进行了确认。相关文件在fingers分支中。
+今日使用蒙特卡洛法对食指指尖的工作空间进行了确认。相关文件在数学模型文件夹中。
 
 2025.6.30更新
-今日学习了arduino的基础使用方法，借助chatGPT进行了一段控制程序的编写，舵机仍在运送途中，因此无法进行实物验证。代码程序在program分支中，命名为controlProgram\_01。
+今日学习了arduino的基础使用方法，借助chatGPT进行了一段控制程序的编写，舵机仍在运送途中，因此无法进行实物验证。代码程序命名为controlProgram\_01。
 
 2025.7.1更新
-今日优化了控制程序controlProgram\_01.ino，使之从串口接收舵机编号和角度，并进行平滑的转动。同时学习了使用python接收Xbox Controller的信号并实现了AB两个按键来控制灯的亮灭，相关的py文件xbox\_led\_control.py在program分支中。
+今日优化了控制程序controlProgram\_01.ino，使之从串口接收舵机编号和角度，并进行平滑的转动。同时学习了使用python接收Xbox Controller的信号并实现了AB两个按键来控制灯的亮灭，相关的py文件为xbox\_led\_control.py。
 
