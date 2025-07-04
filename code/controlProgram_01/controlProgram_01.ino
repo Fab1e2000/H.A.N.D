@@ -8,7 +8,7 @@ Servo servos[4];
 //these should be current angles of the servos
 int angles[4] = {0,0,0,0};
 //maximum & minimum angles to ensure safety
-int maximumAngle = 180;
+int maximumAngle = 160;
 int minimumAngle = 0;
 
 void setup(){
@@ -47,14 +47,14 @@ void loop(){
       Serial.println(angle);
 //check if servos can do it & execute
       if(index >= 0 && index < 4 && angle >= minimumAngle && angle <= maximumAngle){
-        smoothMoveTo(servos[index],angles[index],angle);
+        servos[index].write(angle);
       }
       else{
-        Serial.println('cannot do it');
+        Serial.println("cannot do it");
       }
     }
     else{
-      Serial.println('Invalid input');
+      Serial.println("Invalid input");
     }
   }
 } 
