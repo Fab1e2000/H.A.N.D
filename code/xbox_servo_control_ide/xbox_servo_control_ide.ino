@@ -12,12 +12,13 @@ void setup() {
 
 void loop() {
   if(Serial.available()){
-    int angle = Serial.parseInt();
+    String input = Serial.readStringUntil('\n');
+    int angle = input.toInt();
     if(angle>=minAngle&&angle<=maxAngle){
       servo.write(angle);
       Serial.println("instant angle is:");
       Serial.println(angle);
-      while (Serial.available()) Serial.read();//stop collapse
     }
   }
 }
+

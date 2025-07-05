@@ -21,12 +21,12 @@ while True:
     rt_normalized = (rt+1)/2
     angle = int(rt_normalized*160)
 
-    if angle != last_angle:#为了防止
+    if angle != last_angle:
         control.write(f"{angle}\n".encode())
         print(f"send angle: {angle}")
         last_angle = angle
 
-    time.sleep(0.2)
+    time.sleep(0.1)
 
 
 
