@@ -2,7 +2,7 @@ import pygame
 import serial
 import time
 
-control = serial.Serial('COM7',9600)
+control = serial.Serial('COM5',9600)
 time.sleep(2)
 
 pygame.init()
