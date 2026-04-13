@@ -1,0 +1,26 @@
+{
+  "index": {
+    "far": 0.09092562455433714,
+    "near": 0.026839410039812613,
+    "lateral_far": 15.0,
+    "lateral_near": -15.0,
+    "thumb_lateral_far": -15.0,
+    "thumb_lateral_near": -6.25
+  },
+  "middle": {
+    "far": 0.12494985865334021,
+    "near": 0.028175340485654024,
+    "lateral_far": 15.0,
+    "lateral_near": -13.75,
+    "thumb_lateral_far": -15.0,
+    "thumb_lateral_near": 15.0
+  },
+  "ring": {
+    "far": 0.1435501766610725,
+    "near": 0.04327134339090995,
+    "lateral_far": 15.0,
+    "lateral_near": 15.0,
+    "thumb_lateral_far": -12.5,
+    "thumb_lateral_near": 15.0
+  }
+}

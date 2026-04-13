@@ -1,0 +1,88 @@
+{
+  "_comment": "手部三维模型配置。单位说明：坐标和长度单位建议统一使用 mm；角度单位为度。程序仅会读取 fingers 内的有效字段，所有 *_comment 字段仅用于中文说明。",
+  "_field_guide": {
+    "label": "手指名称，用于界面显示。",
+    "channels": "舵机通道映射。distal=远指节弯曲，proximal=近指节弯曲，lateral=侧摆。",
+    "root": "手指根部坐标 [x, y, z]，用于确定该手指在手掌坐标系中的起点。",
+    "base_direction": "侧摆为 0° 时手指初始指向向量 [x, y, z]，建议接近单位向量。",
+    "segment_lengths": "三段长度 [根节到第一关节, 第一到第二关节, 末端段]。"
+  },
+  "fingers": {
+    "thumb": {
+      "_comment": "拇指参数。相对其他手指通常有外展方向，因此 base_direction 不是纯 Y 轴。",
+      "label": "thumb",
+      "label_comment": "显示名",
+      "channels": {
+        "distal": 0,
+        "distal_comment": "0 号舵机：拇指远指节弯曲。",
+        "proximal": 1,
+        "proximal_comment": "1 号舵机：拇指近指节弯曲。",
+        "lateral": 2,
+        "lateral_comment": "2 号舵机：拇指侧摆（左右偏转）。"
+      },
+      "root": [0, 27.88, 18.05],
+      "root_comment": "拇指根部在手掌坐标系的位置。",
+      "base_direction": [0, 1, -1],
+      "base_direction_comment": "拇指在侧摆=0°时大致朝向右前方。",
+      "segment_lengths": [17, 30, 43],
+      "segment_lengths_comment": "拇指三段长度，按从根部到指尖顺序。"
+    },
+    "index": {
+      "_comment": "食指参数。默认初始朝 +Y 方向。",
+      "label": "index",
+      "label_comment": "显示名",
+      "channels": {
+        "distal": 4,
+        "distal_comment": "4 号舵机：食指远指节弯曲。",
+        "proximal": 5,
+        "proximal_comment": "5 号舵机：食指近指节弯曲。",
+        "lateral": 6,
+        "lateral_comment": "6 号舵机：食指侧摆。"
+      },
+      "root": [0, 26.65, 53.21],
+      "root_comment": "食指根部坐标。",
+      "base_direction": [0, 0, 1],
+      "base_direction_comment": "食指在侧摆=0°时朝 +Y。",
+      "segment_lengths": [17, 30, 43],
+      "segment_lengths_comment": "食指三段长度，按从根部到指尖顺序。"
+    },
+    "middle": {
+      "_comment": "中指参数。通常长度略大于食指/无名指。",
+      "label": "middle",
+      "label_comment": "显示名",
+      "channels": {
+        "distal": 8,
+        "distal_comment": "8 号舵机：中指远指节弯曲。",
+        "proximal": 9,
+        "proximal_comment": "9 号舵机：中指近指节弯曲。",
+        "lateral": 10,
+        "lateral_comment": "10 号舵机：中指侧摆。"
+      },
+      "root": [0, 9.11, 52.60],
+      "root_comment": "中指根部坐标。",
+      "base_direction": [0.0, -1.0, 14.3],
+      "base_direction_comment": "中指在侧摆=0°时朝 +Y。",
+      "segment_lengths": [17, 30, 43],
+      "segment_lengths_comment": "中指三段长度，按从根部到指尖顺序。"
+    },
+    "ring": {
+      "_comment": "无名指参数。",
+      "label": "ring",
+      "label_comment": "显示名",
+      "channels": {
+        "distal": 12,
+        "distal_comment": "12 号舵机：无名指远指节弯曲。",
+        "proximal": 13,
+        "proximal_comment": "13 号舵机：无名指近指节弯曲。",
+        "lateral": 14,
+        "lateral_comment": "14 号舵机：无名指侧摆。"
+      },
+      "root": [0, -8.34, 50.77],
+      "root_comment": "无名指根部坐标。",
+      "base_direction": [0.0, -1.0, 7.11],
+      "base_direction_comment": "无名指在侧摆=0°时朝 +Y。",
+      "segment_lengths": [17, 30, 43],
+      "segment_lengths_comment": "无名指三段长度，按从根部到指尖顺序。"
+    }
+  }
+}

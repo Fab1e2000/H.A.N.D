@@ -1,0 +1,7 @@
+pyserial
+matplotlib
+opencv-python
+mediapipe
+numpy
+pillow
+
